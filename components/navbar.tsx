@@ -12,7 +12,6 @@ export function Navbar() {
     { href: "/", label: "Início" },
     { href: "/curiosities", label: "Curiosidades" },
     { href: "/top10", label: "Top 10" },
-    { href: "/games", label: "Jogos & Nicks" },
     { href: "/dress-code", label: "Dress Code" },
     { href: "/how-to-get-there", label: "Como Chegar" },
     { href: "/photos", label: "Fotos da Festa" }, // New link
