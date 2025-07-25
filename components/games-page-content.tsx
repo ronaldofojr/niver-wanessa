@@ -126,9 +126,7 @@ export default function GamesPageContent() {
     <main className="w-full max-w-4xl mx-auto p-4 sm:p-6 bg-white rounded-xl shadow-2xl border-4 border-blue-400 relative overflow-hidden my-8 y2k-scanlines">
       <div className="relative z-10 text-center space-y-6">
         <div className="bg-gradient-to-r from-blue-600 to-cyan-600 text-white p-6 rounded-lg shadow-lg mb-8">
-          <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight drop-shadow-lg font-['Press_Start_2P'] animate-glitch">
-            JOGOS & NICKS Y2K!
-          </h1>
+          
           <p className="text-xl sm:text-2xl mt-2 font-semibold">Diversão e nostalgia garantidas!</p>
         </div>
 
