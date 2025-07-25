@@ -60,7 +60,7 @@ export default function HowToGetThereContent() {
                 <Bus className="size-5" /> De Ônibus:
               </h3>
               <p className="mb-2">
-                Linhas que passam próximo: 408M, 409M, 423M. Desça no ponto da Praça da Rocha e siga as placas!
+                Linhas que passam próximo: 408M, 409M, 423M, 530M, 531M, 56, 10. Desça no ponto da Praça da Rocha e siga as placas!
               </p>
             </div>
             <div>

@@ -12,15 +12,17 @@ export function Navbar() {
     { href: "/", label: "Início" },
     { href: "/curiosities", label: "Curiosidades" },
     { href: "/top10", label: "Top 10" },
+    { href: "/games", label: "Jogos & Nicks" },
     { href: "/dress-code", label: "Dress Code" },
     { href: "/how-to-get-there", label: "Como Chegar" },
+    { href: "/photos", label: "Fotos da Festa" }, // New link
   ]
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-gradient-to-r from-purple-700 to-pink-700 p-4 shadow-lg">
       <div className="container mx-auto flex justify-between items-center">
         <Link href="/" className="text-white text-2xl font-bold font-['Press_Start_2P']">
-          Y2K Party!
+          2000's
         </Link>
         <div className="hidden md:flex space-x-6">
           {navLinks.map((link) => (
