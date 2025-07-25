@@ -6,9 +6,9 @@ import { CalendarDays, MapPin, MessageCircle } from "lucide-react"
 import { Countdown } from "@/components/countdown"
 
 export default function BirthdayInvite() {
-  const whatsappNumber = "5521990921127"
-  const whatsappMessage = encodeURIComponent("Confirmo minha presença na festa de aniversário!")
-  const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`
+  const baseWhatsappMessage = encodeURIComponent("Confirmo minha presença na festa de aniversário da Wanessa!")
+  const wanessaWhatsappLink = `https://wa.me/5521990921127?text=${baseWhatsappMessage}`
+  const ronaldoWhatsappLink = `https://wa.me/5521989854317?text=${baseWhatsappMessage}`
 
   return (
     <main className="w-full max-w-4xl mx-auto p-4 sm:p-6 bg-white rounded-xl shadow-2xl border-4 border-pink-400 relative overflow-hidden my-8 y2k-scanlines">
@@ -69,14 +69,24 @@ export default function BirthdayInvite() {
         <div className="mt-8">
           <h2 className="text-2xl sm:text-3xl font-bold text-pink-700 mb-4">Não perca essa festa épica!</h2>
           <p className="text-lg text-gray-700 mb-6">Sua presença é muito importante para a Wanessa!</p>
-          <Button
-            asChild
-            className="bg-gradient-to-r from-green-500 to-teal-500 hover:from-green-600 hover:to-teal-600 text-white text-xl sm:text-2xl font-bold py-4 px-8 rounded-full shadow-lg transform hover:scale-105 transition-all duration-300 animate-bounce-slow"
-          >
-            <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
-              <MessageCircle className="mr-3 size-7" /> CONFIRMAR PRESENÇA VIA WHATSAPP!
-            </a>
-          </Button>
+          <div className="flex flex-col sm:flex-row justify-center gap-4">
+            <Button
+              asChild
+              className="bg-gradient-to-r from-green-500 to-teal-500 hover:from-green-600 hover:to-teal-600 text-white text-xl sm:text-2xl font-bold py-4 px-8 rounded-full shadow-lg transform hover:scale-105 transition-all duration-300 animate-bounce-slow"
+            >
+              <a href={wanessaWhatsappLink} target="_blank" rel="noopener noreferrer">
+                <MessageCircle className="mr-3 size-7" /> Confirmar com Wanessa
+              </a>
+            </Button>
+            <Button
+              asChild
+              className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white text-xl sm:text-2xl font-bold py-4 px-8 rounded-full shadow-lg transform hover:scale-105 transition-all duration-300 animate-bounce-slow"
+            >
+              <a href={ronaldoWhatsappLink} target="_blank" rel="noopener noreferrer">
+                <MessageCircle className="mr-3 size-7" /> Confirmar com Ronaldo
+              </a>
+            </Button>
+          </div>
         </div>
 
         <div className="mt-10 text-sm text-gray-500">
